@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <h1>This is first page</h1>
+    <h3>How Awesome</h3>
+    <button onclick="buttonFunc()">Click Me</button>
+    <img src="{% static 'pic.png'%}" alt="No Image">
+    <ul>
+        <li>views.py</li>
+        <li>urls.py</li>
+        <li>Templates Folder</li>
+        <li>settings.py</li>
+    </ul>
+    <br>
+    <a href="{% url 'about' %}">About US</a>
+    <br>
+    <a href="{% url 'result' %}">Form Page</a>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
+</html>
